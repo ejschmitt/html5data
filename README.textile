@@ -12,6 +12,7 @@ Can easier be accessed now with:
 </code></pre>
 
 h2. Installation and usage
+
 Just include the source after loading jQuery, thats it.
 <pre><code>
   <script src="jquery.js"></script>
