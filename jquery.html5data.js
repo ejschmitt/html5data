@@ -9,12 +9,11 @@
  
 (function (jQuery) {
   jQuery.fn.extend({
-    _data : jQuery.fn.data,
-    data  : function(key, value) {
-      if (key && !value && this.attr('data-' + key)) {
+    dataAttr  : function(key, value) {
+      if (key && !value) {
         return this.attr('data-' + key);
-      } else {
-        return jQuery.fn._data(key, value);
+      } else if (value) {
+        return this.attr('data-' + key, value);
       }
     }
   });

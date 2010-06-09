@@ -5,7 +5,10 @@ Data such as:
 <pre><code><a id = 'testId' href = '#' data-test = 'test!'>This is a test</a></code></pre>
 
 Can easier be accessed now with:
-<pre><code>jQuery('#testId').data('test'); => 'test!'</code></pre>
+<pre><code>jQuery('#testId').dataAttr('test'); => 'test!'</code></pre>
+
+Or set as:
+<pre><code>jQuery('#testId').dataAttr('test', value);</code></pre>
 
 h2. Installation and usage
 
